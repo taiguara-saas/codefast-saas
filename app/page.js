@@ -26,6 +26,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       {/* HERO */}
       <section className="text-center lg:text-left py-32 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center lg:items-start">
         <Image
