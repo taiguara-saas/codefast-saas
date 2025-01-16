@@ -3,7 +3,7 @@ import FAQListItem from "@/components/FAQListItem";
 import Image from "next/image";
 import productDemo from "./productDemo.jpeg";
 
-function Home() {
+export default function Home() {
   const isLoggedIn = true;
   const name = "Bob";
 
@@ -46,7 +46,6 @@ function Home() {
           <ButtonLogin isLoggedIn={isLoggedIn} name={name} />
         </div>
       </section>
-
       {/* PRICING */}
       <section className="bg-base-200 py-32" id="pricing">
         <div className="py-32 px-8 max-w-3xl mx-auto">
@@ -98,7 +97,6 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* FAQ */}
       <section className="bg-base-200 py-32" id="faq">
         <div className="py-32 px-8 max-w-3xl mx-auto">
@@ -132,5 +130,3 @@ function Home() {
     </main>
   );
 }
-
-export default Home;
