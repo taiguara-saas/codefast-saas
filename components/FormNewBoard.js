@@ -14,7 +14,7 @@ const FormNewBoard = () => {
     setIsLoading(true);
 
     try {
-      await fetch("/api/board", {
+      const response = await fetch("/api/board", {
         method: "POST",
         body: JSON.stringify({
           name,
@@ -23,6 +23,12 @@ const FormNewBoard = () => {
           "Content-Type": "application/json",
         },
       });
+
+      const data = await response.json();
+
+      console.log(data);
+
+      setName("");
 
       // 2. Redirect to dedicated board page
     } catch (error) {
