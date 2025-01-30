@@ -19,7 +19,7 @@ const ButtonDeleteBoard = ({ boardId }) => {
         toast.success("Board deleted!");
 
         router.push("/dashboard");
-        router.refresh(); // Coloquei isso aqui para funcionar, pois o router.push não funcionava
+        router.refresh();
       }
     } catch (error) {
       const errorMessage =
